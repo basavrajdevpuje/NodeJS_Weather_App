@@ -40,7 +40,7 @@ app.get('/about', (req, res) => {
 // set up the route for the help page Handlebar template 
 app.get('/help', (req, res) => {
     res.render('help', {
-        help_message: "For more help please contact me...",
+        help_message: "For more help please contact me at devpuje.basavraj@gmail.com",
         title: "Help",
         author: "Basavraj"
     })

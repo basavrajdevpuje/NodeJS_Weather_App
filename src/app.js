@@ -34,7 +34,8 @@ app.get('', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about', {
         title: "About",
-        author: 'Basavraj'
+        author: 'Basavraj',
+        about: 'I am a student at Offenburg University of Applied Sciences, studying Communication and Media Engineering. I also like to go outside and click some photographs. Black and White is my favourite theme.'
     })
 })
 // set up the route for the help page Handlebar template 

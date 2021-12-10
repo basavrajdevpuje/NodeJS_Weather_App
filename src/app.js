@@ -6,7 +6,7 @@ const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 //The var app = express() statement creates a new express application for you
 const app = express()
-
+const port = process.env.PORT || 3000
 
 // the domain app.com will have one domain running on express server and 
 // we have to configure the different route for eg app.com/help
@@ -100,8 +100,8 @@ app.get('*', (req, res) => {
 })
 
 //to start the sever
-app.listen(3000, () => {
-    console.log("Server is up on port 3000");
+app.listen(port, () => {
+    console.log("Server is up on port " + port);
 })
 
 /*
